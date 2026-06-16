@@ -1,0 +1,29 @@
+### Home page
+GET https://YOUR-APP-NAME.azurewebsites.net/
+
+### Successful login
+POST https://YOUR-APP-NAME.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Password123!"
+}
+
+### Failed login 1
+POST https://YOUR-APP-NAME.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "wrongpassword"
+}
+
+### Failed login 2
+POST https://YOUR-APP-NAME.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "wrongpassword"
+}
