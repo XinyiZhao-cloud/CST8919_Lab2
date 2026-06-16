@@ -1,8 +1,26 @@
+### Local Successful Login
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "Password123!"
+}
+
+### Local Failed Login
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "wrong"
+}
+
 ### Home page
-GET https://YOUR-APP-NAME.azurewebsites.net/
+GET cst8919-lab2-webapp-d4d3fqfveghdfjgr.westus3-01.azurewebsites.net
 
 ### Successful login
-POST https://YOUR-APP-NAME.azurewebsites.net/login
+POST cst8919-lab2-webapp-d4d3fqfveghdfjgr.westus3-01.azurewebsites.net/login
 Content-Type: application/json
 
 {
@@ -11,7 +29,7 @@ Content-Type: application/json
 }
 
 ### Failed login 1
-POST https://YOUR-APP-NAME.azurewebsites.net/login
+POST cst8919-lab2-webapp-d4d3fqfveghdfjgr.westus3-01.azurewebsites.net/login
 Content-Type: application/json
 
 {
@@ -20,7 +38,7 @@ Content-Type: application/json
 }
 
 ### Failed login 2
-POST https://YOUR-APP-NAME.azurewebsites.net/login
+POST cst8919-lab2-webapp-d4d3fqfveghdfjgr.westus3-01.azurewebsites.net/login
 Content-Type: application/json
 
 {
